@@ -6,7 +6,9 @@ from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+import dagshub
 
+dagshub.init(repo_owner='donadviser', repo_name='mlflow_experiment_tracking', mlflow=True)
 
 # Load the Iris dataset
 X, y = datasets.load_iris(return_X_y=True)
@@ -18,7 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Define the model hyperparameters
 params = {
-    "solver": "lbfgs",
+    "solver": "liblinear",
     "max_iter": 2500,
     "multi_class": "auto",
     "random_state": 8888,
@@ -45,7 +47,7 @@ accuracy = accuracy_score(y_test, y_pred)
 
 
 # Set our tracking server uri for logging
-mlflow.set_tracking_uri(uri="http://0.0.0.0:5000")
+#mlflow.set_tracking_uri(uri="http://0.0.0.0:5000")
 
 # Create a new MLflow Experiment
 mlflow.set_experiment("MLflow Quickstart")
