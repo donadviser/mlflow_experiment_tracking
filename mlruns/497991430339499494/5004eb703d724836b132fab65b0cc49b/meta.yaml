@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/don/github-projects/mlflow_experiment_tracking/mlruns/497991430339499494/5004eb703d724836b132fab65b0cc49b/artifacts
+end_time: 1718187038395
+entry_point_name: ''
+experiment_id: '497991430339499494'
+lifecycle_stage: active
+run_id: 5004eb703d724836b132fab65b0cc49b
+run_name: casual-cub-327
+run_uuid: 5004eb703d724836b132fab65b0cc49b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718187036522
+status: 3
+tags: []
+user_id: don

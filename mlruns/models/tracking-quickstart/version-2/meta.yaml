@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1718187805579
+current_stage: None
+description: null
+last_updated_timestamp: 1718187805579
+name: tracking-quickstart
+run_id: 99b0dd903ae74a538fba8021742d72cd
+run_link: null
+source: file:///Users/don/github-projects/mlflow_experiment_tracking/mlruns/497991430339499494/99b0dd903ae74a538fba8021742d72cd/artifacts/iris_model
+status: READY
+status_message: null
+storage_location: file:///Users/don/github-projects/mlflow_experiment_tracking/mlruns/497991430339499494/99b0dd903ae74a538fba8021742d72cd/artifacts/iris_model
+user_id: null
+version: 2
