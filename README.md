@@ -52,6 +52,29 @@ pipenv shell
 
 aws configure
 
+# finally
+# Activate the virtual environment
+source /home/ubuntu/.local/share/virtualenvs/mlflow-2-G5ToyU/bin/activate
+
+# Install setuptools
+pip install setuptools
+
+# Verify the installation of setuptools
+pip show setuptools
+
+# Run the mlflow server command again
+mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflow-expt-github
+
+
+#Open Public IPv4 DNS to the port 5000
+
+#set uri in your local terminal and in your code
+export MLFLOW_TRACKING_URI=http://ec2-3-83-116-165.compute-1.amazonaws.com:5000/
+```
+
+
+
+
 ```
 
 

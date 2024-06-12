@@ -1,0 +1,15 @@
+artifact_uri: /Users/don/github-projects/mlflow_experiment_tracking/export MLFLOW_TRACKING_URI=http:/ec2-3-83-116-165.compute-1.amazonaws.com:5000/750298966648499430/da40335cd9144d97beb151a7bccb728d/artifacts
+end_time: 1718203074046
+entry_point_name: ''
+experiment_id: '750298966648499430'
+lifecycle_stage: active
+run_id: da40335cd9144d97beb151a7bccb728d
+run_name: mercurial-eel-933
+run_uuid: da40335cd9144d97beb151a7bccb728d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718203072083
+status: 3
+tags: []
+user_id: fa6da7abb8a2b0a7c826f157495d39ece5b6fcca

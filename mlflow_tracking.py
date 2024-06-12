@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import dagshub
 
-dagshub.init(repo_owner='donadviser', repo_name='mlflow_experiment_tracking', mlflow=True)
+#dagshub.init(repo_owner='donadviser', repo_name='mlflow_experiment_tracking', mlflow=True)
 
 # Load the Iris dataset
 X, y = datasets.load_iris(return_X_y=True)
@@ -48,6 +48,11 @@ accuracy = accuracy_score(y_test, y_pred)
 
 # Set our tracking server uri for logging
 #mlflow.set_tracking_uri(uri="http://0.0.0.0:5000")
+
+# For remote server only (AWS)
+remote_server_uri = "http://ec2-3-83-116-165.compute-1.amazonaws.com:5000/"
+
+mlflow.set_tracking_uri(remote_server_uri)
 
 # Create a new MLflow Experiment
 mlflow.set_experiment("MLflow Quickstart")
