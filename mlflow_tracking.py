@@ -20,7 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Define the model hyperparameters
 params = {
-    "solver": "liblinear",
+    "solver": "newton-cg",
     "max_iter": 2500,
     "multi_class": "auto",
     "random_state": 8888,
